@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
   <head>
@@ -46,7 +47,7 @@
     </style>
     <!--Without style the page would be really plain and boring...-->
   </head>
-  <body>
+  <body onload="detectMode()">
 	<center>
 	<button onclick="dark()" id="modetoggle">Dark mode</button>
 	<h1>Things you might want to know about Mastodon</h1>
@@ -55,44 +56,49 @@
 	<h3>Introduction</h3>
 	<p>You might have heard about Mastodon. Maybe someone told you that it is really good or that you should start using it. Or maybe someone you know has announced that they are mostly on Mastodon instead of Facebook or Twitter.
 	It is good to know though, that Mastodon is not the only option. In this article I will talk mostly about Mastodon, but actually the same applies to Friendica and Pleroma.</p>
-	</br>
+	<br/>
 	<hr>
 	<h3>What is Mastodon?</h3>
 	<p>Mastodon is an alternative platform to Twitter and Facebook and the like. Mastodon is part of the so-called 'fediverse', which is a part of the web that consists of several social media servers that are connected to each other. There are multiple Mastodon servers, but they can all communicate with each other, so that you can from one server reach your friends on another server too. This is not only true for Mastodon, but also for Friendica and Pleroma and such. So on Friendia, you can see what your friend on Mastodon posts.</br>
 	So in short, Mastodon is part of the Fediverse, which means that you are not limited to one specific server. You can choose what server to use.</p>
-	</br>
+	<br/>
 	<h3>What is the advantage of so much servers?</h3>
-	<p>There is a big advantage of having very much servers to choose from. It means that there are much servers which are not crowded with people. Since every server has it's own operator and moderators, the moderation process is incredibly easier, because there are quite less things to need attention of the moderators than on something like Twitter. Furthermore, each server can have it's own focus. E.g. there can be servers which specifically aim to be a safe place for visual impaired people.</br>
+	<p>There is a big advantage of having very much servers to choose from. It means that there are much servers which are not crowded with people. Since every server has it's own operator and moderators, the moderation process is incredibly easier, because there are quite less things to need attention of the moderators than on something like Twitter. Furthermore, each server can have it's own focus. E.g. there can be servers which specifically aim to be a safe place for visual impaired people.<br/>
 	So, the advantage is that Mastodon is generally better moderated and that you can choose what kind of people you want to be on a server with.</p>
-	</br>
+	<br/>
 	<h3>But what is the advantage of being able to choose a cool server?</h3>
 	<p>For this, I first have to explain something about Mastodon. On Mastodon you have three time-lines. One is your home time-line, where posts by the people you follow will appear. The second one is the local time-line, where posts by other people on your instance (server) will appear. The last time-line is the federated time-line, where everything appears that is posted by anyone on the Fediverse, as long as they are followed by at least one person on your instance. Do not worry, on the local and the federated time-line, there only appear public posts.</br>
 	Now I can get to the answer of the question. The main advantage of being able to choose a server, is that you can choose a server that has people who have the same interests. This has as a result that the local time-line will have posts that you might like. The local time-line can contain posts by people who share some of your interests.</br>
 	So in short, the advantage of choosing a server is that you can have a nice local time-line.</p>
-	</br>
+	<br/>
 	<h3>How much is Mastodon comparable to Facebook or Twitter?</h3>
 	<p>In general, Mastodon can be compared to Twitter, and Friendica can be compared to Facebook. It is a bit comparable, but there are quite some differences. Facebook and Twitter use algorithms to decide what you get to see. On Mastodon this is not the case, so you see the posts in the order they were written. The newest first. The second 'big' difference is that you do not have to use your real name on Mastodon or anywhere on the Fediverse. In fact, most people use a nickname. This means that you can be more anonymous on Mastodon, which sometimes makes certian things. The third difference is the way that you follow people. On Facebook or Twitter it is normal to follow people who you know. It is very strange to follow a lot of people who do not know. On Mastodon, it is different. There you follow people because of what they post. Because of their interests. So you get a much wider view.</br>
 	So, the main differences are that there are no algorithms, you do not have to use your real name and that you can follow people based on their interests and what they post.</p>
-	</br>
+	<br/>
 	<h3>Why should I use Mastodon? Almost nobody uses it, right?</h3>
-	<p>Actually there are quite some people who use the Fediverse. Of course, compared to Facebook or Twitter it is not much, but it is still quite a number of people that use Mastodon. And on Mastodon there are very likely people who share some interests with you. There even exists a community-maintained list of people that post about certain topics, which makes it easy to find people to start following. Once you start following people, you come across posts by others that they boost, and then you might find that one of those people also posts nice things and you can start following them. And then over time you can follow quite some people. I myself recently found out that some people whom I follow like music that I like too!</br>
+	<p>Actually there are quite some people who use the Fediverse. Of course, compared to Facebook or Twitter it is not much, but it is still quite a number of people that use Mastodon. And on Mastodon there are very likely people who share some interests with you. There even exists a community-maintained list of people that post about certain topics, which makes it easy to find people to start following. Once you start following people, you come across posts by others that they boost, and then you might find that one of those people also posts nice things and you can start following them. And then over time you can follow quite some people. I myself recently found out that some people whom I follow like music that I like too! It also should be mentioned that once more people start using Mastodon, even more will follow!</br>
 	So in short, there are a lot of nice people to follow / interact with on Mastodon.</p>
-	</br>
+	<br/>
 	<h3>What if I do not like the server I have my account on? Can I have multiple accounts on several servers?</h3>
 	<p>You can easily move an account from one server to another. With this you can take your followers and follows with you. It is also possible to have an account on multiple servers. This is actually something that several people are doing!</p>
 	<br/>
 	<h3>But how do I find the right server?</h3>
 	<p>Finding the correct server is sometimes hard to do. Because there are so much instances, it can be difficult to find a good one. Some suggestions are:</br></p>
 	<ul>
-		<li><a href="https://wierder.earth" target="_blank">wierder.earth</a></li>
+		<li><a href="https://weirder.earth" target="_blank">weirder.earth</a></li>
 		<li><a href="https://mastodon.green" target="_blank">mastodon.green</a></li>
-		<li><a href="https://toot.cat" target="_blank">toot.cat</a></li>
+		<li><a href="https://toot.site" target="_blank">toot.site</a></li>
 	</ul>
 	<p>You can also send me an email at <i>netdragon@disroot.org</i> for a personal advice.</p>
-	</br>
+	<br/>
 	<hr>
 	If you see anything on this page that can be fixed or if you have any suggestions, feel free to submit an issue on <a href="https://github.com/PrivacyDragon/Mastodon-Facebook/issues" target="_blank">Github</a>.
-  <script type="text/javascript">
+	<script type="text/javascript">
+		function detectMode() {
+			if (document.URL.endsWith('#d')) {
+              			dark();
+            		}
+		}
 		function light() {
 			document.body.style = "color: #000000 !important; background-color: #eff0f1 !important;";
 			document.getElementById('modetoggle').setAttribute('onclick', 'dark()');
